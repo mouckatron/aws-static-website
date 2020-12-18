@@ -21,6 +21,7 @@ resource "aws_codepipeline" "frontend" {
         RepositoryName       = "${var.appname}-sitecode"
         BranchName           = "master"
         PollForSourceChanges = false
+        OutputArtifactFormat = "CODEBUILD_CLONE_REF"
       }
     }
   }
