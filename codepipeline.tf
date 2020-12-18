@@ -98,7 +98,7 @@ resource "aws_cloudwatch_event_rule" "frontend_pipeline" {
     "CodeCommit Repository State Change"
   ],
   "resources": [
-    "${aws_codecommit_repository.frontend.arn}"
+    "${aws_codecommit_repository.sitecode.arn}"
   ],
   "detail": {
     "event": [
