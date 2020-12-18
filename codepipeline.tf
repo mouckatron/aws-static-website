@@ -18,7 +18,7 @@ resource "aws_codepipeline" "frontend" {
       version          = "1"
       output_artifacts = ["source_output"]
       configuration = {
-        RepositoryName       = "${var.appname}-frontend"
+        RepositoryName       = "${var.appname}-sitecode"
         BranchName           = "master"
         PollForSourceChanges = false
       }
