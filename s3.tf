@@ -3,6 +3,12 @@
 resource "aws_s3_bucket" "frontend" {
   bucket = local.domain
   acl    = "private"
+
+  website {
+    error_document = "error.html"
+    index_document = "index.html"
+  }
+
   tags = {
     appname = var.appname
   }
