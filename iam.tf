@@ -78,6 +78,7 @@ resource "aws_iam_role_policy" "codepipeline" {
     {
       "Effect": "Allow",
       "Action": [
+        "codecommit:GetRepository",
         "codecommit:GetBranch",
         "codecommit:GetCommit",
         "codecommit:UploadArchive",
