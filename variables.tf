@@ -10,7 +10,7 @@ variable "root_domain" {
 }
 
 variable "sub_domain" {
-  description = "true: host at <appname>.<root_domain>, false: host at <root_domain>"
+  description = "true: host at $appname.$root_domain, false: host at $root_domain"
   type        = bool
   default     = false
 }
