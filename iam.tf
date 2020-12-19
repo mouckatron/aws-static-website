@@ -82,7 +82,8 @@ resource "aws_iam_role_policy" "codepipeline" {
         "codecommit:GetBranch",
         "codecommit:GetCommit",
         "codecommit:UploadArchive",
-        "codecommit:GetUploadArchiveStatus"
+        "codecommit:GetUploadArchiveStatus",
+        "codecommit:GitPull"
       ],
       "Resource": [
         "${aws_codecommit_repository.sitecode.arn}"
